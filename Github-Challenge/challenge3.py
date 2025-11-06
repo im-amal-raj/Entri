@@ -9,7 +9,6 @@ def game_mechanics():
     global user_point, bot_point, result
     item = ["stone", "paper", "scissor"]
     bot_pick = random.choice(item)
-    print(bot_pick)
     while True:
         user_pick = input("enter a choice: ").strip().lower()
         if user_pick in item:
