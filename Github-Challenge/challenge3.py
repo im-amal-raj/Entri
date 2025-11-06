@@ -10,11 +10,11 @@ def game_mechanics():
     item = ["stone", "paper", "scissor"]
     bot_pick = random.choice(item)
     while True:
-        user_pick = input("enter a choice: ").strip().lower()
+        user_pick = input("\n\nenter a choice: ").strip().lower()
         if user_pick in item:
             break
         else :
-            print("Invalid input pick either stone , paper or scissor")
+            print("\nInvalid input pick either stone , paper or scissor")
     if user_pick == bot_pick:
         result = "draw"
         user_point += 1
@@ -34,7 +34,7 @@ def game_mechanics():
         bot_point += 2
 
     print(
-        f"you picked {user_pick} the bot picked {bot_pick} you {result} \n \tpoints \nbot : {bot_point} || you : {user_point}"
+        f"you picked '{user_pick}' the bot picked '{bot_pick}' you '{result}' \n\n \tpoints \nbot : {bot_point} || you : {user_point} \n\n"
     )
 
 
